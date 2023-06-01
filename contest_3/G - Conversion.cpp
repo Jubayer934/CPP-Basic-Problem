@@ -6,11 +6,12 @@ int main()
     
     cin>>s;
     int a=s.size();
-    for(int i=0;i<a;i++)
+    replace(s.begin(),s.end(),',',' ');
+   /* for(int i=0;i<a;i++)
     {
         if(s[i]==',')
         s[i]=' ';
-    }
+    }*/
     for(int i=0;i<a;i++)
     {
         if(islower(s[i]))

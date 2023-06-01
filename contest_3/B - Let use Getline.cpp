@@ -3,16 +3,13 @@
 using namespace std;
 int main()
 {
-    string x,y;
-    cin>>x;
-    int i=0;
-    while (true)
+    string x;
+getline(std::cin, x); 
+   for(char c:x)
     {
-        if(x[i]=='\\')
+        if(c=='\\')
         break;
-        y+=x[i];
-        i++;
-
+        cout<<c;
+        
     }
-    cout<<y<<endl;
 }
